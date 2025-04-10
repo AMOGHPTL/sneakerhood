@@ -3,6 +3,8 @@ import { useDispatch } from "react-redux";
 import { useState } from "react";
 import { decerement, increament } from "../state/slices/likedSlice";
 import { addtoCart, removeFromCart } from "../state/slices/cartItemsSlice";
+import { selectSneaker } from "../state/slices/sneakerSlice";
+import { useNavigate } from "react-router-dom";
 
 interface sneaker {
   id: string;
@@ -61,8 +63,18 @@ const SneakerCard = ({ sneaker }: { sneaker: sneaker }) => {
     setAdded(!added);
   };
 
+  const navigate = useNavigate();
+
+  const handleSelected = () => {
+    dispatch(selectSneaker(sneaker));
+    navigate("/sneaker");
+  };
+
   return (
-    <div className="bg-gray-100 rounded-xl py-5 px-2 m-10 hover:scale-105 transition ease-out duration-200 cursor-pointer shadow-2xl shadow-gray-600 ">
+    <div
+      onClick={handleSelected}
+      className="bg-gray-100 rounded-xl py-5 px-2 m-10 hover:scale-105 transition ease-out duration-200 cursor-pointer shadow-2xl shadow-gray-600 "
+    >
       <div className="flex w-full px-2 justify-between items-center">
         <p className="text-xs text-gray-500">{sneaker.name}</p>
         <HeartIcon
@@ -86,10 +98,12 @@ const SneakerCard = ({ sneaker }: { sneaker: sneaker }) => {
             <p className="text-2xl font-semibold">${sneaker.retailPrice}</p>
           </div>
           <div
-            className={`text-xl font-semibold text-white ${!added?"bg-amber-400":"bg-red-600"} rounded-sm px-3 p-2`}
+            className={`text-xl font-semibold text-white ${
+              !added ? "bg-amber-400" : "bg-red-600"
+            } rounded-sm px-3 p-2`}
             onClick={handleAddToCart}
           >
-            <p>{!added?"Add to cart":"Remove"}</p>
+            <p>{!added ? "Add to cart" : "Remove"}</p>
           </div>
         </div>
       </div>

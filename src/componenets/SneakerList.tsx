@@ -39,7 +39,7 @@ const SneakerList = () => {
 
   return (
     <div className="w-full grid grid-cols-3">
-      <div className="col-span-3 mx-10 mt-10 mt-6">
+      <div className="col-span-3 mx-10 mt-6">
         <img
           src="https://www.footlocker.sg/media/wysiwyg/NIKE-SG.jpg"
           className="w-full"
