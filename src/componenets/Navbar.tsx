@@ -2,7 +2,7 @@ import { HeartIcon, ShoppingCartIcon, UserIcon } from "@heroicons/react/24/outli
 import logo from "../assets/logoBlack-removebg-preview.png"
 
 const Navbar = () => {
-    return ( <div className="w-full text-black px-4 py-1 flex justify-between border-b-1 border-b-black">
+    return ( <div className="w-full text-black bg-[#81D8D0] px-10 py-1 flex justify-between border-b-1 border-b-black">
       <div className="flex items-center font-bold gap-1 cursor-pointer">
         <span className="text-2xl text-black">Sneakerhood</span>
         <img src={logo} alt="" className="w-18"/>
