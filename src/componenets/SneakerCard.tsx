@@ -1,7 +1,8 @@
 import { HeartIcon } from "@heroicons/react/24/outline";
 import { useDispatch } from "react-redux";
 import { useState } from "react";
-import { decerement, increament } from "../state/slices/LikedSlice";
+import { decerement, increament } from "../state/slices/likedSlice";
+import { addtoCart, removeFromCart } from "../state/slices/cartItemsSlice";
 
 interface sneaker {
   id: string;
@@ -32,6 +33,7 @@ interface sneaker {
 
 const SneakerCard = ({ sneaker }: { sneaker: sneaker }) => {
   const [liked, setLiked] = useState(false);
+  const [added, setAdded] = useState(false);
   const dispatch = useDispatch();
 
   const handleLiked = () => {
@@ -42,9 +44,21 @@ const SneakerCard = ({ sneaker }: { sneaker: sneaker }) => {
       // Only decrement if going from liked to not liked
       dispatch(decerement());
     }
-    
+
     // Toggle the liked state after dispatching the action
     setLiked(!liked);
+  };
+
+  const handleAddToCart = () => {
+    if (!added) {
+      // Only increment if going from not liked to liked
+      dispatch(addtoCart());
+    } else {
+      // Only decrement if going from liked to not liked
+      dispatch(removeFromCart());
+    }
+    // Toggle the liked state after dispatching the action
+    setAdded(!added);
   };
 
   return (
@@ -66,9 +80,17 @@ const SneakerCard = ({ sneaker }: { sneaker: sneaker }) => {
           <p className="text-gray-500">{sneaker.brand}</p>
           <p className="text-xs text-gray-500">{sneaker.colorway}</p>
         </div>
-        <div className="flex flex-col gap-2">
-          <p className="text-lg font-semibold">{sneaker.silhouette}</p>
-          <p className="text-2xl font-semibold">${sneaker.retailPrice}</p>
+        <div className="flex flex-row gap-2 justify-between items-end">
+          <div>
+            <p className="text-lg font-semibold">{sneaker.silhouette}</p>
+            <p className="text-2xl font-semibold">${sneaker.retailPrice}</p>
+          </div>
+          <div
+            className={`text-xl font-semibold text-white ${!added?"bg-amber-400":"bg-red-600"} rounded-sm px-3 p-2`}
+            onClick={handleAddToCart}
+          >
+            <p>{!added?"Add to cart":"Remove"}</p>
+          </div>
         </div>
       </div>
     </div>
