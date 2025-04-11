@@ -13,6 +13,7 @@ interface Sneaker {
   releaseYear: string;
   releaseDate: string;
   retailPrice: number;
+  size:number;
   estimatedMarketValue: number;
   story: string;
   image: {
@@ -38,7 +39,7 @@ const SneakerList = () => {
   console.log(sneakers);
 
   return (
-    <div className="w-full grid grid-cols-3">
+    <div className="w-full grid grid-cols-3 max-w-screen-xl mx-auto">
       <div className="col-span-3 mx-10 mt-6">
         <img
           src="https://www.footlocker.sg/media/wysiwyg/NIKE-SG.jpg"
@@ -46,7 +47,7 @@ const SneakerList = () => {
           alt=""
         />
       </div>
-      {sneakers.slice(0, 3).map((sneaker) => (
+      {sneakers.slice(0, 8).map((sneaker) => (
         <SneakerCard sneaker={sneaker}/>
       ))}
       <div className="col-span-3 mx-10 mt-20">
@@ -56,7 +57,7 @@ const SneakerList = () => {
           alt=""
         />
       </div>
-      {sneakers.slice(3, 6).map((sneaker) => (
+      {sneakers.slice(8, 11).map((sneaker) => (
         <SneakerCard sneaker={sneaker}/>
       ))}
       <div className="col-span-3 mx-10 mt-20">
@@ -66,7 +67,7 @@ const SneakerList = () => {
           alt=""
         />
       </div>
-      {sneakers.slice(6, 9).map((sneaker) => (
+      {sneakers.slice(11, 14).map((sneaker) => (
         <SneakerCard sneaker={sneaker}/>
       ))}
       <div className="col-span-3 mx-10 mt-20">
@@ -76,7 +77,7 @@ const SneakerList = () => {
           alt=""
         />
       </div>
-      {sneakers.slice(9).map((sneaker) => (
+      {sneakers.slice(14).map((sneaker) => (
         <SneakerCard sneaker={sneaker}/>
       ))}
     </div>

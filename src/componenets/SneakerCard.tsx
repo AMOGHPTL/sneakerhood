@@ -17,6 +17,7 @@ interface sneaker {
   releaseYear: string;
   releaseDate: string;
   retailPrice: number;
+  size:number;
   estimatedMarketValue: number;
   story: string;
   image: {

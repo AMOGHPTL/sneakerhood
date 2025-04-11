@@ -11,6 +11,7 @@ interface SneakerState {
   releaseYear: string;
   releaseDate: string;
   retailPrice: number;
+  size:number;
   estimatedMarketValue: number;
   story: string;
   image: {
@@ -38,6 +39,7 @@ const initialState: SneakerState = {
   releaseYear: "",
   releaseDate: "",
   retailPrice: 0,
+  size: 0,
   estimatedMarketValue: 0,
   story: "",
   image: {

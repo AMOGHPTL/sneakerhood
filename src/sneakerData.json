@@ -1,307 +1,450 @@
 {
-    "count": 17849,
-    "totalPages": 50,
-    "results": [
-      {
-        "id": "9a50b9b5-39a0-4f66-9ac0-5e1cbf1552e5",
-        "sku": "719864-010",
-        "brand": "nike",
-        "name": "nike air max blue",
-        "colorway": "Blue/White",
-        "gender": "men",
-        "silhouette": "Air Max",
-        "releaseYear": "2015",
-        "releaseDate": "2015-04-25",
-        "retailPrice": 250,
-        "estimatedMarketValue": 275,
-        "story": "The Nike Air Max '11Lab4 - Black' is a hybrid of the Air Jordan 11 and Air Jordan 4 silhouettes created by the Air Jordan Lab. The design features an all-black patent leather upper with black wax laces, a black outsole, and a hit of white near the midsole heel Air unit. Released in April 2015, the '11Lab4' also dropped in a 'Red' colorway in July 2015. ",
-        "image": {
-          "original": "https://www.superkicks.in/cdn/shop/files/3_7b612486-dc76-4839-87ae-4f7691c968e2.jpg?v=1741079767&width=600",
-          "small": "https://image.goat.com/750/attachments/product_template_pictures/images/079/643/723/original/14704_00.png.png",
-          "thumbnail": "https://image.goat.com/375/attachments/product_template_pictures/images/079/643/723/original/14704_00.png.png"
-        },
-        "links": {
-          "stockX": "https://stockx.com/jordan-4-retro-11lab4-black",
-          "goat": "https://goat.com/sneakers/air-jordan-4-retro-11lab4-719864-010",
-          "flightClub": "https://flightclub.com/air-jordan-4-retro-black-white-012224",
-          "stadiumGoods": "https://sale.stadiumgoods.com/air-jordan-4-11lab4-black-patent-719864-010"
-        },
-        "color": "black"
+  "count": 17849,
+  "totalPages": 50,
+  "results": [
+    {
+      "id": "9a50b9b5-39a0-4f66-9ac0-5e1cbf1552e5",
+      "sku": "719864-010",
+      "brand": "nike",
+      "name": "nike air max blue",
+      "colorway": "Blue/White",
+      "gender": "men",
+      "silhouette": "Air Max",
+      "releaseYear": "2015",
+      "releaseDate": "2015-04-25",
+      "retailPrice": 250,
+      "estimatedMarketValue": 275,
+      "size": 10,
+      "story": "The Nike Air Max '11Lab4 - Black' is a hybrid of the Air Jordan 11 and Air Jordan 4 silhouettes created by the Air Jordan Lab. The design features an all-black patent leather upper with black wax laces, a black outsole, and a hit of white near the midsole heel Air unit. Released in April 2015, the '11Lab4' also dropped in a 'Red' colorway in July 2015. ",
+      "image": {
+        "original": "https://www.superkicks.in/cdn/shop/files/3_7b612486-dc76-4839-87ae-4f7691c968e2.jpg?v=1741079767&width=600",
+        "small": "https://image.goat.com/750/attachments/product_template_pictures/images/079/643/723/original/14704_00.png.png",
+        "thumbnail": "https://image.goat.com/375/attachments/product_template_pictures/images/079/643/723/original/14704_00.png.png"
       },
-      {
-        "id": "9ee2e8fc-cd14-4e6f-827e-c3e1a10f37a2",
-        "sku": "719864-010-S",
-        "brand": "Jordan",
-        "name": "Air Jordan 1 high '11Lab4 - Black' Sample",
-        "colorway": "Black/White",
-        "gender": "men",
-        "silhouette": "Air Jordan 1",
-        "releaseYear": "0",
-        "releaseDate": "",
-        "retailPrice": 150,
-        "estimatedMarketValue": 0,
-        "story": "",
-        "image": {
-          "original": "https://www.superkicks.in/cdn/shop/files/5_23a3816a-5494-4ec0-9bee-4bb65924e24d.jpg?v=1723189607&width=600",
-          "small": "https://image.goat.com/750/attachments/product_template_pictures/images/026/481/841/original/719864_010_S.png.png",
-          "thumbnail": "https://image.goat.com/375/attachments/product_template_pictures/images/026/481/841/original/719864_010_S.png.png"
-        },
-        "links": {
-          "stockX": "",
-          "goat": "https://goat.com/sneakers/air-jordan-4-retro-11lab4-black-patent-leather-sample-719864-010-s",
-          "flightClub": "https://flightclub.com/air-jordan-4-retro-11lab4-black-patent-leather-sample-719864-010-s",
-          "stadiumGoods": ""
-        }
+      "links": {
+        "stockX": "https://stockx.com/jordan-4-retro-11lab4-black",
+        "goat": "https://goat.com/sneakers/air-jordan-4-retro-11lab4-719864-010",
+        "flightClub": "https://flightclub.com/air-jordan-4-retro-black-white-012224",
+        "stadiumGoods": "https://sale.stadiumgoods.com/air-jordan-4-11lab4-black-patent-719864-010"
       },
-      {
-        "id": "d7f3e86d-ecb1-4b9a-b071-1c3eb9e20719",
-        "sku": "136013-101",
-        "brand": "Nike",
-        "name": "Nike Dunks Low",
-        "colorway": "White/Black",
-        "gender": "men",
-        "silhouette": "Nike Dunks Low",
-        "releaseYear": "1999",
-        "releaseDate": "1999-06-02",
-        "retailPrice": 100,
-        "estimatedMarketValue": 216,
-        "story": "One of the most popular colorways in Air Jordan history (with help from Michael Jordan on court and Spike Lee's 'Do The Right Thing'), the original 'Cement' version of the AJ 4 earns its namesake from the special black splatter print across its grey sections. Released in 1989 and retroed in 1999, it also features white leather and grated mesh uppers, a visible Air unit, Nike Air branding at the heel, and a red Jumpman on the tongue.",
-        "image": {
-          "original": "https://www.superkicks.in/cdn/shop/files/3_b86c441a-7050-4213-80f8-362d3ffbf343.jpg?v=1742300616&width=600",
-          "small": "https://image.goat.com/750/attachments/product_template_pictures/images/079/643/723/original/14704_00.png.png",
-          "thumbnail": "https://image.goat.com/375/attachments/product_template_pictures/images/079/643/723/original/14704_00.png.png"
-        },
-        "links": {
-          "stockX": "https://stockx.com/jordan-4-retro-white-cement-1999",
-          "goat": "https://goat.com/sneakers/air-jordan-4-retro-white-cement-136013-101",
-          "flightClub": "https://flightclub.com/air-jordan-4-retro-white-black-136013-101",
-          "stadiumGoods": ""
-        }
+      "color": "black"
+    },
+    {
+      "id": "9ee2e8fc-cd14-4e6f-827e-c3e1a10f37a2",
+      "sku": "719864-010-S",
+      "brand": "Jordan",
+      "name": "Air Jordan 1 high '11Lab4 - Black' Sample",
+      "colorway": "Black/White",
+      "gender": "men",
+      "silhouette": "Air Jordan 1",
+      "releaseYear": "0",
+      "releaseDate": "",
+      "retailPrice": 150,
+      "estimatedMarketValue": 0,
+      "size": 9,
+      "story": "",
+      "image": {
+        "original": "https://www.superkicks.in/cdn/shop/files/5_23a3816a-5494-4ec0-9bee-4bb65924e24d.jpg?v=1723189607&width=600",
+        "small": "https://image.goat.com/750/attachments/product_template_pictures/images/026/481/841/original/719864_010_S.png.png",
+        "thumbnail": "https://image.goat.com/375/attachments/product_template_pictures/images/026/481/841/original/719864_010_S.png.png"
       },
-      {
-        "id": "d7f3e86d-ecb1-4b9a-b071-1c3eb9e20719",
-        "sku": "136013-101",
-        "brand": "new balance",
-        "name": "new balance 550",
-        "colorway": "White/Green",
-        "gender": "men",
-        "silhouette": "new balance 550",
-        "releaseYear": "1999",
-        "releaseDate": "1999-06-02",
-        "retailPrice": 100,
-        "estimatedMarketValue": 216,
-        "story": "One of the most popular colorways in new balance history (with help from Michael Jordan on court and Spike Lee's 'Do The Right Thing'), the original 'Cement' version of the AJ 4 earns its namesake from the special black splatter print across its grey sections. Released in 1989 and retroed in 1999, it also features white leather and grated mesh uppers, a visible Air unit, Nike Air branding at the heel, and a red Jumpman on the tongue.",
-        "image": {
-          "original": "https://cdn.shopify.com/s/files/1/0659/0722/8923/files/3_7eec9bb8-1ab3-4401-a405-10d892a46577_1000x.jpg?v=1742988243",
-          "small": "https://image.goat.com/750/attachments/product_template_pictures/images/079/643/723/original/14704_00.png.png",
-          "thumbnail": "https://image.goat.com/375/attachments/product_template_pictures/images/079/643/723/original/14704_00.png.png"
-        },
-        "links": {
-          "stockX": "https://stockx.com/jordan-4-retro-white-cement-1999",
-          "goat": "https://goat.com/sneakers/air-jordan-4-retro-white-cement-136013-101",
-          "flightClub": "https://flightclub.com/air-jordan-4-retro-white-black-136013-101",
-          "stadiumGoods": ""
-        }
-      },
-      {
-        "id": "d7f3e86d-ecb1-4b9a-b071-1c3eb9e20719",
-        "sku": "136013-101",
-        "brand": "new balance",
-        "name": "new balance 400",
-        "colorway": "White/Black",
-        "gender": "men",
-        "silhouette": "new balance 400",
-        "releaseYear": "1999",
-        "releaseDate": "1999-06-02",
-        "retailPrice": 100,
-        "estimatedMarketValue": 216,
-        "story": "One of the most popular colorways in new balance history (with help from Michael Jordan on court and Spike Lee's 'Do The Right Thing'), the original 'Cement' version of the AJ 4 earns its namesake from the special black splatter print across its grey sections. Released in 1989 and retroed in 1999, it also features white leather and grated mesh uppers, a visible Air unit, Nike Air branding at the heel, and a red Jumpman on the tongue.",
-        "image": {
-          "original": "https://cdn.shopify.com/s/files/1/0659/0722/8923/files/5-2025-03-07T171454.725_1000x.jpg?v=1741347958",
-          "small": "https://image.goat.com/750/attachments/product_template_pictures/images/079/643/723/original/14704_00.png.png",
-          "thumbnail": "https://image.goat.com/375/attachments/product_template_pictures/images/079/643/723/original/14704_00.png.png"
-        },
-        "links": {
-          "stockX": "https://stockx.com/jordan-4-retro-white-cement-1999",
-          "goat": "https://goat.com/sneakers/air-jordan-4-retro-white-cement-136013-101",
-          "flightClub": "https://flightclub.com/air-jordan-4-retro-white-black-136013-101",
-          "stadiumGoods": ""
-        }
-      },
-      {
-        "id": "d7f3e86d-ecb1-4b9a-b071-1c3eb9e20719",
-        "sku": "136013-101",
-        "brand": "Jordan",
-        "name": "Jordan 4 Retro White Cement (1999)",
-        "colorway": "White/Black",
-        "gender": "men",
-        "silhouette": "Air Jordan 4",
-        "releaseYear": "1999",
-        "releaseDate": "1999-06-02",
-        "retailPrice": 100,
-        "estimatedMarketValue": 216,
-        "story": "One of the most popular colorways in Air Jordan history (with help from Michael Jordan on court and Spike Lee's 'Do The Right Thing'), the original 'Cement' version of the AJ 4 earns its namesake from the special black splatter print across its grey sections. Released in 1989 and retroed in 1999, it also features white leather and grated mesh uppers, a visible Air unit, Nike Air branding at the heel, and a red Jumpman on the tongue.",
-        "image": {
-          "original": "https://cdn.shopify.com/s/files/1/0659/0722/8923/files/3_cb1a797c-91aa-4467-927b-8e57ea7655a4_1000x.jpg?v=1739182713",
-          "small": "https://image.goat.com/750/attachments/product_template_pictures/images/079/643/723/original/14704_00.png.png",
-          "thumbnail": "https://image.goat.com/375/attachments/product_template_pictures/images/079/643/723/original/14704_00.png.png"
-        },
-        "links": {
-          "stockX": "https://stockx.com/jordan-4-retro-white-cement-1999",
-          "goat": "https://goat.com/sneakers/air-jordan-4-retro-white-cement-136013-101",
-          "flightClub": "https://flightclub.com/air-jordan-4-retro-white-black-136013-101",
-          "stadiumGoods": ""
-        }
-      },
-      {
-        "id": "d7f3e86d-ecb1-4b9a-b071-1c3eb9e20719",
-        "sku": "136013-101",
-        "brand": "Jordan",
-        "name": "Jordan 4 Retro White Cement (1999)",
-        "colorway": "White/Black",
-        "gender": "men",
-        "silhouette": "Air Jordan 4",
-        "releaseYear": "1999",
-        "releaseDate": "1999-06-02",
-        "retailPrice": 100,
-        "estimatedMarketValue": 216,
-        "story": "One of the most popular colorways in Air Jordan history (with help from Michael Jordan on court and Spike Lee's 'Do The Right Thing'), the original 'Cement' version of the AJ 4 earns its namesake from the special black splatter print across its grey sections. Released in 1989 and retroed in 1999, it also features white leather and grated mesh uppers, a visible Air unit, Nike Air branding at the heel, and a red Jumpman on the tongue.",
-        "image": {
-          "original": "https://cdn.shopify.com/s/files/1/0659/0722/8923/files/2_40ddcd8b-4d76-4fd9-bbfa-784cdd25e3b0_1000x.jpg?v=1743166402",
-          "small": "https://image.goat.com/750/attachments/product_template_pictures/images/079/643/723/original/14704_00.png.png",
-          "thumbnail": "https://image.goat.com/375/attachments/product_template_pictures/images/079/643/723/original/14704_00.png.png"
-        },
-        "links": {
-          "stockX": "https://stockx.com/jordan-4-retro-white-cement-1999",
-          "goat": "https://goat.com/sneakers/air-jordan-4-retro-white-cement-136013-101",
-          "flightClub": "https://flightclub.com/air-jordan-4-retro-white-black-136013-101",
-          "stadiumGoods": ""
-        }
-      },
-      {
-        "id": "d7f3e86d-ecb1-4b9a-b071-1c3eb9e20719",
-        "sku": "136013-101",
-        "brand": "Jordan",
-        "name": "Jordan 4 Retro White Cement (1999)",
-        "colorway": "White/Black",
-        "gender": "men",
-        "silhouette": "Air Jordan 4",
-        "releaseYear": "1999",
-        "releaseDate": "1999-06-02",
-        "retailPrice": 100,
-        "estimatedMarketValue": 216,
-        "story": "One of the most popular colorways in Air Jordan history (with help from Michael Jordan on court and Spike Lee's 'Do The Right Thing'), the original 'Cement' version of the AJ 4 earns its namesake from the special black splatter print across its grey sections. Released in 1989 and retroed in 1999, it also features white leather and grated mesh uppers, a visible Air unit, Nike Air branding at the heel, and a red Jumpman on the tongue.",
-        "image": {
-          "original": "https://cdn.shopify.com/s/files/1/0659/0722/8923/files/4-2025-04-02T173640.931_1000x.jpg?v=1743595726",
-          "small": "https://image.goat.com/750/attachments/product_template_pictures/images/079/643/723/original/14704_00.png.png",
-          "thumbnail": "https://image.goat.com/375/attachments/product_template_pictures/images/079/643/723/original/14704_00.png.png"
-        },
-        "links": {
-          "stockX": "https://stockx.com/jordan-4-retro-white-cement-1999",
-          "goat": "https://goat.com/sneakers/air-jordan-4-retro-white-cement-136013-101",
-          "flightClub": "https://flightclub.com/air-jordan-4-retro-white-black-136013-101",
-          "stadiumGoods": ""
-        }
-      },
-      {
-        "id": "d7f3e86d-ecb1-4b9a-b071-1c3eb9e20719",
-        "sku": "136013-101",
-        "brand": "Jordan",
-        "name": "Jordan 4 Retro White Cement (1999)",
-        "colorway": "White/Black",
-        "gender": "men",
-        "silhouette": "Air Jordan 4",
-        "releaseYear": "1999",
-        "releaseDate": "1999-06-02",
-        "retailPrice": 100,
-        "estimatedMarketValue": 216,
-        "story": "One of the most popular colorways in Air Jordan history (with help from Michael Jordan on court and Spike Lee's 'Do The Right Thing'), the original 'Cement' version of the AJ 4 earns its namesake from the special black splatter print across its grey sections. Released in 1989 and retroed in 1999, it also features white leather and grated mesh uppers, a visible Air unit, Nike Air branding at the heel, and a red Jumpman on the tongue.",
-        "image": {
-          "original": "https://cdn.shopify.com/s/files/1/0659/0722/8923/files/5-2025-03-12T135210.902_1000x.jpg?v=1741767791",
-          "small": "https://image.goat.com/750/attachments/product_template_pictures/images/079/643/723/original/14704_00.png.png",
-          "thumbnail": "https://image.goat.com/375/attachments/product_template_pictures/images/079/643/723/original/14704_00.png.png"
-        },
-        "links": {
-          "stockX": "https://stockx.com/jordan-4-retro-white-cement-1999",
-          "goat": "https://goat.com/sneakers/air-jordan-4-retro-white-cement-136013-101",
-          "flightClub": "https://flightclub.com/air-jordan-4-retro-white-black-136013-101",
-          "stadiumGoods": ""
-        }
-      },
-      {
-        "id": "d7f3e86d-ecb1-4b9a-b071-1c3eb9e20719",
-        "sku": "136013-101",
-        "brand": "Jordan",
-        "name": "Jordan 4 Retro White Cement (1999)",
-        "colorway": "White/Black",
-        "gender": "men",
-        "silhouette": "Air Jordan 4",
-        "releaseYear": "1999",
-        "releaseDate": "1999-06-02",
-        "retailPrice": 100,
-        "estimatedMarketValue": 216,
-        "story": "One of the most popular colorways in Air Jordan history (with help from Michael Jordan on court and Spike Lee's 'Do The Right Thing'), the original 'Cement' version of the AJ 4 earns its namesake from the special black splatter print across its grey sections. Released in 1989 and retroed in 1999, it also features white leather and grated mesh uppers, a visible Air unit, Nike Air branding at the heel, and a red Jumpman on the tongue.",
-        "image": {
-          "original": "https://www.superkicks.in/cdn/shop/files/4_1b81fd74-162a-45bf-bca2-e4bf27df33ca.jpg?v=1739817130&width=600",
-          "small": "https://image.goat.com/750/attachments/product_template_pictures/images/079/643/723/original/14704_00.png.png",
-          "thumbnail": "https://image.goat.com/375/attachments/product_template_pictures/images/079/643/723/original/14704_00.png.png"
-        },
-        "links": {
-          "stockX": "https://stockx.com/jordan-4-retro-white-cement-1999",
-          "goat": "https://goat.com/sneakers/air-jordan-4-retro-white-cement-136013-101",
-          "flightClub": "https://flightclub.com/air-jordan-4-retro-white-black-136013-101",
-          "stadiumGoods": ""
-        }
-      },
-      {
-        "id": "d7f3e86d-ecb1-4b9a-b071-1c3eb9e20719",
-        "sku": "136013-101",
-        "brand": "Jordan",
-        "name": "Jordan 4 Retro White Cement (1999)",
-        "colorway": "White/Black",
-        "gender": "men",
-        "silhouette": "Air Jordan 4",
-        "releaseYear": "1999",
-        "releaseDate": "1999-06-02",
-        "retailPrice": 100,
-        "estimatedMarketValue": 216,
-        "story": "One of the most popular colorways in Air Jordan history (with help from Michael Jordan on court and Spike Lee's 'Do The Right Thing'), the original 'Cement' version of the AJ 4 earns its namesake from the special black splatter print across its grey sections. Released in 1989 and retroed in 1999, it also features white leather and grated mesh uppers, a visible Air unit, Nike Air branding at the heel, and a red Jumpman on the tongue.",
-        "image": {
-          "original": "https://www.superkicks.in/cdn/shop/files/4_d6cf9fa5-646f-4d5b-b8a4-7e869017e323.jpg?v=1741080158&width=600",
-          "small": "https://image.goat.com/750/attachments/product_template_pictures/images/079/643/723/original/14704_00.png.png",
-          "thumbnail": "https://image.goat.com/375/attachments/product_template_pictures/images/079/643/723/original/14704_00.png.png"
-        },
-        "links": {
-          "stockX": "https://stockx.com/jordan-4-retro-white-cement-1999",
-          "goat": "https://goat.com/sneakers/air-jordan-4-retro-white-cement-136013-101",
-          "flightClub": "https://flightclub.com/air-jordan-4-retro-white-black-136013-101",
-          "stadiumGoods": ""
-        }
-      },
-      {
-        "id": "d7f3e86d-ecb1-4b9a-b071-1c3eb9e20719",
-        "sku": "136013-101",
-        "brand": "Jordan",
-        "name": "Jordan 4 Retro White Cement (1999)",
-        "colorway": "White/Black",
-        "gender": "men",
-        "silhouette": "Air Jordan 4",
-        "releaseYear": "1999",
-        "releaseDate": "1999-06-02",
-        "retailPrice": 100,
-        "estimatedMarketValue": 216,
-        "story": "One of the most popular colorways in Air Jordan history (with help from Michael Jordan on court and Spike Lee's 'Do The Right Thing'), the original 'Cement' version of the AJ 4 earns its namesake from the special black splatter print across its grey sections. Released in 1989 and retroed in 1999, it also features white leather and grated mesh uppers, a visible Air unit, Nike Air branding at the heel, and a red Jumpman on the tongue.",
-        "image": {
-          "original": "https://www.superkicks.in/cdn/shop/files/7_85d091c4-9d68-4495-9d6f-357d98ddf307.jpg?v=1732520840&width=600",
-          "small": "https://image.goat.com/750/attachments/product_template_pictures/images/079/643/723/original/14704_00.png.png",
-          "thumbnail": "https://image.goat.com/375/attachments/product_template_pictures/images/079/643/723/original/14704_00.png.png"
-        },
-        "links": {
-          "stockX": "https://stockx.com/jordan-4-retro-white-cement-1999",
-          "goat": "https://goat.com/sneakers/air-jordan-4-retro-white-cement-136013-101",
-          "flightClub": "https://flightclub.com/air-jordan-4-retro-white-black-136013-101",
-          "stadiumGoods": ""
-        }
+      "links": {
+        "stockX": "",
+        "goat": "https://goat.com/sneakers/air-jordan-4-retro-11lab4-black-patent-leather-sample-719864-010-s",
+        "flightClub": "https://flightclub.com/air-jordan-4-retro-11lab4-black-patent-leather-sample-719864-010-s",
+        "stadiumGoods": ""
       }
-    ]
-  }
+    },
+    {
+      "id": "d7f3e86d-ecb1-4b9a-b071-1c3eb9e20719",
+      "sku": "136013-101",
+      "brand": "Nike",
+      "name": "Nike Dunks Low",
+      "colorway": "White/Black",
+      "gender": "men",
+      "silhouette": "Nike Dunks Low",
+      "releaseYear": "1999",
+      "releaseDate": "1999-06-02",
+      "retailPrice": 100,
+      "estimatedMarketValue": 216,
+      "size": 8.5,
+      "story": "One of the most popular colorways in Air Jordan history (with help from Michael Jordan on court and Spike Lee's 'Do The Right Thing'), the original 'Cement' version of the AJ 4 earns its namesake from the special black splatter print across its grey sections. Released in 1989 and retroed in 1999, it also features white leather and grated mesh uppers, a visible Air unit, Nike Air branding at the heel, and a red Jumpman on the tongue.",
+      "image": {
+        "original": "https://www.superkicks.in/cdn/shop/files/3_b86c441a-7050-4213-80f8-362d3ffbf343.jpg?v=1742300616&width=600",
+        "small": "https://image.goat.com/750/attachments/product_template_pictures/images/079/643/723/original/14704_00.png.png",
+        "thumbnail": "https://image.goat.com/375/attachments/product_template_pictures/images/079/643/723/original/14704_00.png.png"
+      },
+      "links": {
+        "stockX": "https://stockx.com/jordan-4-retro-white-cement-1999",
+        "goat": "https://goat.com/sneakers/air-jordan-4-retro-white-cement-136013-101",
+        "flightClub": "https://flightclub.com/air-jordan-4-retro-white-black-136013-101",
+        "stadiumGoods": ""
+      }
+    },
+    {
+      "id": "a1b2c3d4-e5f6-4a7b-8c9d-0e1f2a3b4c5d",
+      "sku": "DD1391-100",
+      "brand": "Nike",
+      "name": "Nike Dunk Low 'Panda'",
+      "colorway": "Black/White",
+      "gender": "unisex",
+      "silhouette": "Nike Dunk Low",
+      "releaseYear": "2021",
+      "releaseDate": "2021-03-10",
+      "retailPrice": 100,
+      "estimatedMarketValue": 120,
+      "size": 9,
+      "story": "The Nike Dunk Low 'Panda' showcases a clean two-tone color scheme that accentuates the silhouette's classic basketball construction. The all-leather upper features a white base with contrasting black overlays and a matching black Swoosh. A woven Nike tag adorns the breathable nylon tongue, while embroidered Nike branding decorates the heel tab. The sneaker is mounted on a durable rubber cupsole, highlighted by a concentric rubber outsole for traction.",
+      "image": {
+        "original": "https://cdn.shopify.com/s/files/1/0659/0722/8923/products/DD1391-100_1000x.jpg?v=1675962916",
+        "small": "https://image.goat.com/750/attachments/product_template_pictures/images/056/052/667/original/DD1391_100.png.png",
+        "thumbnail": "https://image.goat.com/375/attachments/product_template_pictures/images/056/052/667/original/DD1391_100.png.png"
+      },
+      "links": {
+        "stockX": "https://stockx.com/nike-dunk-low-retro-white-black-2021",
+        "goat": "https://goat.com/sneakers/dunk-low-retro-white-black-2021-dd1391-100",
+        "flightClub": "https://flightclub.com/dunk-low-retro-white-black-2021-dd1391-100",
+        "stadiumGoods": "https://www.stadiumgoods.com/en-us/shopping/nike-dunk-low-panda-dd1391-100-16553190"
+      }
+    },
+    {
+      "id": "f5e4d3c2-b1a2-3c4d-5e6f-7a8b9c0d1e2f",
+      "sku": "CZ0105-101",
+      "brand": "Nike",
+      "name": "Nike Air Force 1 '07 'Triple White'",
+      "colorway": "White/White",
+      "gender": "unisex",
+      "silhouette": "Air Force 1",
+      "releaseYear": "2020",
+      "releaseDate": "2020-12-01",
+      "retailPrice": 90,
+      "estimatedMarketValue": 90,
+      "size": 10,
+      "story": "The Nike Air Force 1 '07 'Triple White' is a fresh take on the classic silhouette that launched in 1982 as the first basketball shoe with Nike Air technology. This clean iteration features an all-white leather upper with perforations for enhanced breathability. A matching white rubber midsole houses encapsulated Air cushioning, while the rubber outsole provides traction and durability. Timeless and versatile, this sneaker has transcended its performance basketball roots to become a cultural icon.",
+      "image": {
+        "original": "https://www.superkicks.in/cdn/shop/products/1-3_c4a86ac6-b85f-46f2-96fa-cffc3ce36e53.jpg?v=1681121167&width=1946",
+        "small": "https://image.goat.com/750/attachments/product_template_pictures/images/046/943/855/original/CZ0105_101.png.png",
+        "thumbnail": "https://image.goat.com/375/attachments/product_template_pictures/images/046/943/855/original/CZ0105_101.png.png"
+      },
+      "links": {
+        "stockX": "https://stockx.com/nike-air-force-1-low-white-07",
+        "goat": "https://goat.com/sneakers/air-force-1-07-white-cz0105-101",
+        "flightClub": "https://flightclub.com/air-force-1-07-white-cz0105-101",
+        "stadiumGoods": "https://www.stadiumgoods.com/en-us/shopping/nike-air-force-1-07-white-cz0105-101-16708485"
+      }
+    },
+    {
+      "id": "e3f4g5h6-i7j8-9k0l-1m2n-3o4p5q6r7s8t",
+      "sku": "DJ6188-101",
+      "brand": "Nike",
+      "name": "Nike Dunk Low 'Reverse Panda'",
+      "colorway": "White/Black",
+      "gender": "unisex",
+      "silhouette": "Nike Dunk Low",
+      "releaseYear": "2023",
+      "releaseDate": "2023-07-12",
+      "retailPrice": 110,
+      "estimatedMarketValue": 130,
+      "size": 9,
+      "story": "A reverse take on the classic 'Panda' Dunk, this pair features a white leather base with black accents on the Swoosh, laces, and branding.",
+      "image": {
+        "original": "https://crepdogcrew.com/cdn/shop/files/EditsbyAhmar02_25cd8784-3e4e-4912-b28d-5ae0255c4be7.png?v=1742750810&width=800",
+        "small": "https://images.stockx.com/images/Nike-Dunk-Low-Reverse-Panda-DJ6188-101.jpg?width=750",
+        "thumbnail": "https://images.stockx.com/images/Nike-Dunk-Low-Reverse-Panda-DJ6188-101.jpg?width=375"
+      },
+      "links": {
+        "stockX": "https://stockx.com/nike-dunk-low-reverse-panda-dj6188-101",
+        "goat": "https://goat.com/sneakers/dunk-low-reverse-panda-dj6188-101",
+        "flightClub": "https://flightclub.com/dunk-low-reverse-panda-dj6188-101",
+        "stadiumGoods": "https://www.stadiumgoods.com/en-us/shopping/nike-dunk-low-reverse-panda-dj6188-101"
+      }
+    },
+    {
+      "id": "u9v8w7x6-y5z4-3a2b-1c0d-9e8f7g6h5i4j",
+      "sku": "DV0788-001",
+      "brand": "Nike",
+      "name": "Nike Air Force 1 Low 'Panda'",
+      "colorway": "Black/White",
+      "gender": "unisex",
+      "silhouette": "Air Force 1",
+      "releaseYear": "2023",
+      "releaseDate": "2023-02-16",
+      "retailPrice": 110,
+      "estimatedMarketValue": 120,
+      "size": 10,
+      "story": "This iteration of the Air Force 1 features a white leather base with black overlays, laces, and outsole, offering a sleek monochromatic look.",
+      "image": {
+        "original": "https://static.nike.com/a/images/t_default/3f3e7049-5c99-428c-abcd-e246b086f2ed/AIR+FORCE+1+%2707.png",
+        "small": "https://images.stockx.com/images/Nike-Air-Force-1-Low-Panda-DV0788-001.jpg?width=750",
+        "thumbnail": "https://images.stockx.com/images/Nike-Air-Force-1-Low-Panda-DV0788-001.jpg?width=375"
+      },
+      "links": {
+        "stockX": "https://stockx.com/nike-air-force-1-low-panda-dv0788-001",
+        "goat": "https://goat.com/sneakers/air-force-1-low-panda-dv0788-001",
+        "flightClub": "https://flightclub.com/air-force-1-low-panda-dv0788-001",
+        "stadiumGoods": "https://www.stadiumgoods.com/en-us/shopping/nike-air-force-1-low-panda-dv0788-001"
+      }
+    },
+    {
+      "id": "k1l2m3n4-o5p6-7q8r-9s0t-1u2v3w4x5y6z",
+      "sku": "CZ0790-001",
+      "brand": "Nike",
+      "name": "Nike Dunk Low 'Black White'",
+      "colorway": "Black/White",
+      "gender": "unisex",
+      "silhouette": "Nike Dunk Low",
+      "releaseYear": "2021",
+      "releaseDate": "2021-03-10",
+      "retailPrice": 100,
+      "estimatedMarketValue": 120,
+      "size": 9,
+      "story": "The Nike Dunk Low 'Black White' showcases a clean two-tone color scheme that accentuates the silhouette's classic basketball construction.",
+      "image": {
+        "original": "https://static.nike.com/a/images/t_default/b1bcbca4-e853-4df7-b329-5be3c61ee057/NIKE+DUNK+LOW+RETRO.png",
+        "small": "https://images.stockx.com/images/Nike-Dunk-Low-Black-White-CZ0790-001.jpg?width=750",
+        "thumbnail": "https://images.stockx.com/images/Nike-Dunk-Low-Black-White-CZ0790-001.jpg?width=375"
+      },
+      "links": {
+        "stockX": "https://stockx.com/nike-dunk-low-black-white-cz0790-001",
+        "goat": "https://goat.com/sneakers/dunk-low-black-white-cz0790-001",
+        "flightClub": "https://flightclub.com/dunk-low-black-white-cz0790-001",
+        "stadiumGoods": "https://www.stadiumgoods.com/en-us/shopping/nike-dunk-low-black-white-cz0790-001"
+      }
+    },
+    {
+      "id": "d7f3e86d-ecb1-4b9a-b071-1c3eb9e20719",
+      "sku": "136013-101",
+      "brand": "new balance",
+      "name": "new balance 550",
+      "colorway": "White/Green",
+      "gender": "men",
+      "silhouette": "new balance 550",
+      "releaseYear": "1999",
+      "releaseDate": "1999-06-02",
+      "retailPrice": 100,
+      "estimatedMarketValue": 216,
+      "size": 11,
+      "story": "One of the most popular colorways in new balance history (with help from Michael Jordan on court and Spike Lee's 'Do The Right Thing'), the original 'Cement' version of the AJ 4 earns its namesake from the special black splatter print across its grey sections. Released in 1989 and retroed in 1999, it also features white leather and grated mesh uppers, a visible Air unit, Nike Air branding at the heel, and a red Jumpman on the tongue.",
+      "image": {
+        "original": "https://cdn.shopify.com/s/files/1/0659/0722/8923/files/3_7eec9bb8-1ab3-4401-a405-10d892a46577_1000x.jpg?v=1742988243",
+        "small": "https://image.goat.com/750/attachments/product_template_pictures/images/079/643/723/original/14704_00.png.png",
+        "thumbnail": "https://image.goat.com/375/attachments/product_template_pictures/images/079/643/723/original/14704_00.png.png"
+      },
+      "links": {
+        "stockX": "https://stockx.com/jordan-4-retro-white-cement-1999",
+        "goat": "https://goat.com/sneakers/air-jordan-4-retro-white-cement-136013-101",
+        "flightClub": "https://flightclub.com/air-jordan-4-retro-white-black-136013-101",
+        "stadiumGoods": ""
+      }
+    },
+    {
+      "id": "d7f3e86d-ecb1-4b9a-b071-1c3eb9e20719",
+      "sku": "136013-101",
+      "brand": "new balance",
+      "name": "new balance 400",
+      "colorway": "White/Black",
+      "gender": "men",
+      "silhouette": "new balance 400",
+      "releaseYear": "1999",
+      "releaseDate": "1999-06-02",
+      "retailPrice": 100,
+      "estimatedMarketValue": 216,
+      "size": 10.5,
+      "story": "One of the most popular colorways in new balance history (with help from Michael Jordan on court and Spike Lee's 'Do The Right Thing'), the original 'Cement' version of the AJ 4 earns its namesake from the special black splatter print across its grey sections. Released in 1989 and retroed in 1999, it also features white leather and grated mesh uppers, a visible Air unit, Nike Air branding at the heel, and a red Jumpman on the tongue.",
+      "image": {
+        "original": "https://cdn.shopify.com/s/files/1/0659/0722/8923/files/5-2025-03-07T171454.725_1000x.jpg?v=1741347958",
+        "small": "https://image.goat.com/750/attachments/product_template_pictures/images/079/643/723/original/14704_00.png.png",
+        "thumbnail": "https://image.goat.com/375/attachments/product_template_pictures/images/079/643/723/original/14704_00.png.png"
+      },
+      "links": {
+        "stockX": "https://stockx.com/jordan-4-retro-white-cement-1999",
+        "goat": "https://goat.com/sneakers/air-jordan-4-retro-white-cement-136013-101",
+        "flightClub": "https://flightclub.com/air-jordan-4-retro-white-black-136013-101",
+        "stadiumGoods": ""
+      }
+    },
+    {
+      "id": "d7f3e86d-ecb1-4b9a-b071-1c3eb9e20719",
+      "sku": "136013-101",
+      "brand": "Jordan",
+      "name": "Jordan 4 Retro White Cement (1999)",
+      "colorway": "White/Black",
+      "gender": "men",
+      "silhouette": "Air Jordan 4",
+      "releaseYear": "1999",
+      "releaseDate": "1999-06-02",
+      "retailPrice": 100,
+      "estimatedMarketValue": 216,
+      "size": 9.5,
+      "story": "One of the most popular colorways in Air Jordan history (with help from Michael Jordan on court and Spike Lee's 'Do The Right Thing'), the original 'Cement' version of the AJ 4 earns its namesake from the special black splatter print across its grey sections. Released in 1989 and retroed in 1999, it also features white leather and grated mesh uppers, a visible Air unit, Nike Air branding at the heel, and a red Jumpman on the tongue.",
+      "image": {
+        "original": "https://cdn.shopify.com/s/files/1/0659/0722/8923/files/3_cb1a797c-91aa-4467-927b-8e57ea7655a4_1000x.jpg?v=1739182713",
+        "small": "https://image.goat.com/750/attachments/product_template_pictures/images/079/643/723/original/14704_00.png.png",
+        "thumbnail": "https://image.goat.com/375/attachments/product_template_pictures/images/079/643/723/original/14704_00.png.png"
+      },
+      "links": {
+        "stockX": "https://stockx.com/jordan-4-retro-white-cement-1999",
+        "goat": "https://goat.com/sneakers/air-jordan-4-retro-white-cement-136013-101",
+        "flightClub": "https://flightclub.com/air-jordan-4-retro-white-black-136013-101",
+        "stadiumGoods": ""
+      }
+    },
+    {
+      "id": "d7f3e86d-ecb1-4b9a-b071-1c3eb9e20719",
+      "sku": "136013-101",
+      "brand": "Jordan",
+      "name": "Jordan 4 Retro White Cement (1999)",
+      "colorway": "White/Black",
+      "gender": "men",
+      "silhouette": "Air Jordan 4",
+      "releaseYear": "1999",
+      "releaseDate": "1999-06-02",
+      "retailPrice": 100,
+      "estimatedMarketValue": 216,
+      "size": 8,
+      "story": "One of the most popular colorways in Air Jordan history (with help from Michael Jordan on court and Spike Lee's 'Do The Right Thing'), the original 'Cement' version of the AJ 4 earns its namesake from the special black splatter print across its grey sections. Released in 1989 and retroed in 1999, it also features white leather and grated mesh uppers, a visible Air unit, Nike Air branding at the heel, and a red Jumpman on the tongue.",
+      "image": {
+        "original": "https://cdn.shopify.com/s/files/1/0659/0722/8923/files/2_40ddcd8b-4d76-4fd9-bbfa-784cdd25e3b0_1000x.jpg?v=1743166402",
+        "small": "https://image.goat.com/750/attachments/product_template_pictures/images/079/643/723/original/14704_00.png.png",
+        "thumbnail": "https://image.goat.com/375/attachments/product_template_pictures/images/079/643/723/original/14704_00.png.png"
+      },
+      "links": {
+        "stockX": "https://stockx.com/jordan-4-retro-white-cement-1999",
+        "goat": "https://goat.com/sneakers/air-jordan-4-retro-white-cement-136013-101",
+        "flightClub": "https://flightclub.com/air-jordan-4-retro-white-black-136013-101",
+        "stadiumGoods": ""
+      }
+    },
+    {
+      "id": "d7f3e86d-ecb1-4b9a-b071-1c3eb9e20719",
+      "sku": "136013-101",
+      "brand": "Jordan",
+      "name": "Jordan 4 Retro White Cement (1999)",
+      "colorway": "White/Black",
+      "gender": "men",
+      "silhouette": "Air Jordan 4",
+      "releaseYear": "1999",
+      "releaseDate": "1999-06-02",
+      "retailPrice": 100,
+      "estimatedMarketValue": 216,
+      "size": 12,
+      "story": "One of the most popular colorways in Air Jordan history (with help from Michael Jordan on court and Spike Lee's 'Do The Right Thing'), the original 'Cement' version of the AJ 4 earns its namesake from the special black splatter print across its grey sections. Released in 1989 and retroed in 1999, it also features white leather and grated mesh uppers, a visible Air unit, Nike Air branding at the heel, and a red Jumpman on the tongue.",
+      "image": {
+        "original": "https://cdn.shopify.com/s/files/1/0659/0722/8923/files/4-2025-04-02T173640.931_1000x.jpg?v=1743595726",
+        "small": "https://image.goat.com/750/attachments/product_template_pictures/images/079/643/723/original/14704_00.png.png",
+        "thumbnail": "https://image.goat.com/375/attachments/product_template_pictures/images/079/643/723/original/14704_00.png.png"
+      },
+      "links": {
+        "stockX": "https://stockx.com/jordan-4-retro-white-cement-1999",
+        "goat": "https://goat.com/sneakers/air-jordan-4-retro-white-cement-136013-101",
+        "flightClub": "https://flightclub.com/air-jordan-4-retro-white-black-136013-101",
+        "stadiumGoods": ""
+      }
+    },
+    {
+      "id": "d7f3e86d-ecb1-4b9a-b071-1c3eb9e20719",
+      "sku": "136013-101",
+      "brand": "Jordan",
+      "name": "Jordan 4 Retro White Cement (1999)",
+      "colorway": "White/Black",
+      "gender": "men",
+      "silhouette": "Air Jordan 4",
+      "releaseYear": "1999",
+      "releaseDate": "1999-06-02",
+      "retailPrice": 100,
+      "estimatedMarketValue": 216,
+      "size": 10,
+      "story": "One of the most popular colorways in Air Jordan history (with help from Michael Jordan on court and Spike Lee's 'Do The Right Thing'), the original 'Cement' version of the AJ 4 earns its namesake from the special black splatter print across its grey sections. Released in 1989 and retroed in 1999, it also features white leather and grated mesh uppers, a visible Air unit, Nike Air branding at the heel, and a red Jumpman on the tongue.",
+      "image": {
+        "original": "https://cdn.shopify.com/s/files/1/0659/0722/8923/files/5-2025-03-12T135210.902_1000x.jpg?v=1741767791",
+        "small": "https://image.goat.com/750/attachments/product_template_pictures/images/079/643/723/original/14704_00.png.png",
+        "thumbnail": "https://image.goat.com/375/attachments/product_template_pictures/images/079/643/723/original/14704_00.png.png"
+      },
+      "links": {
+        "stockX": "https://stockx.com/jordan-4-retro-white-cement-1999",
+        "goat": "https://goat.com/sneakers/air-jordan-4-retro-white-cement-136013-101",
+        "flightClub": "https://flightclub.com/air-jordan-4-retro-white-black-136013-101",
+        "stadiumGoods": ""
+      }
+    },
+    {
+      "id": "d7f3e86d-ecb1-4b9a-b071-1c3eb9e20719",
+      "sku": "136013-101",
+      "brand": "Jordan",
+      "name": "Jordan 4 Retro White Cement (1999)",
+      "colorway": "White/Black",
+      "gender": "men",
+      "silhouette": "Air Jordan 4",
+      "releaseYear": "1999",
+      "releaseDate": "1999-06-02",
+      "retailPrice": 100,
+      "estimatedMarketValue": 216,
+      "size": 11.5,
+      "story": "One of the most popular colorways in Air Jordan history (with help from Michael Jordan on court and Spike Lee's 'Do The Right Thing'), the original 'Cement' version of the AJ 4 earns its namesake from the special black splatter print across its grey sections. Released in 1989 and retroed in 1999, it also features white leather and grated mesh uppers, a visible Air unit, Nike Air branding at the heel, and a red Jumpman on the tongue.",
+      "image": {
+        "original": "https://www.superkicks.in/cdn/shop/files/4_1b81fd74-162a-45bf-bca2-e4bf27df33ca.jpg?v=1739817130&width=600",
+        "small": "https://image.goat.com/750/attachments/product_template_pictures/images/079/643/723/original/14704_00.png.png",
+        "thumbnail": "https://image.goat.com/375/attachments/product_template_pictures/images/079/643/723/original/14704_00.png.png"
+      },
+      "links": {
+        "stockX": "https://stockx.com/jordan-4-retro-white-cement-1999",
+        "goat": "https://goat.com/sneakers/air-jordan-4-retro-white-cement-136013-101",
+        "flightClub": "https://flightclub.com/air-jordan-4-retro-white-black-136013-101",
+        "stadiumGoods": ""
+      }
+    },
+    {
+      "id": "d7f3e86d-ecb1-4b9a-b071-1c3eb9e20719",
+      "sku": "136013-101",
+      "brand": "Jordan",
+      "name": "Jordan 4 Retro White Cement (1999)",
+      "colorway": "White/Black",
+      "gender": "men",
+      "silhouette": "Air Jordan 4",
+      "releaseYear": "1999",
+      "releaseDate": "1999-06-02",
+      "retailPrice": 100,
+      "estimatedMarketValue": 216,
+      "size": 9,
+      "story": "One of the most popular colorways in Air Jordan history (with help from Michael Jordan on court and Spike Lee's 'Do The Right Thing'), the original 'Cement' version of the AJ 4 earns its namesake from the special black splatter print across its grey sections. Released in 1989 and retroed in 1999, it also features white leather and grated mesh uppers, a visible Air unit, Nike Air branding at the heel, and a red Jumpman on the tongue.",
+      "image": {
+        "original": "https://www.superkicks.in/cdn/shop/files/4_d6cf9fa5-646f-4d5b-b8a4-7e869017e323.jpg?v=1741080158&width=600",
+        "small": "https://image.goat.com/750/attachments/product_template_pictures/images/079/643/723/original/14704_00.png.png",
+        "thumbnail": "https://image.goat.com/375/attachments/product_template_pictures/images/079/643/723/original/14704_00.png.png"
+      },
+      "links": {
+        "stockX": "https://stockx.com/jordan-4-retro-white-cement-1999",
+        "goat": "https://goat.com/sneakers/air-jordan-4-retro-white-cement-136013-101",
+        "flightClub": "https://flightclub.com/air-jordan-4-retro-white-black-136013-101",
+        "stadiumGoods": ""
+      }
+    },
+    {
+      "id": "d7f3e86d-ecb1-4b9a-b071-1c3eb9e20719",
+      "sku": "136013-101",
+      "brand": "Jordan",
+      "name": "Jordan 4 Retro White Cement (1999)",
+      "colorway": "White/Black",
+      "gender": "men",
+      "silhouette": "Air Jordan 4",
+      "releaseYear": "1999",
+      "releaseDate": "1999-06-02",
+      "retailPrice": 100,
+      "estimatedMarketValue": 216,
+      "size": 13,
+      "story": "One of the most popular colorways in Air Jordan history (with help from Michael Jordan on court and Spike Lee's 'Do The Right Thing'), the original 'Cement' version of the AJ 4 earns its namesake from the special black splatter print across its grey sections. Released in 1989 and retroed in 1999, it also features white leather and grated mesh uppers, a visible Air unit, Nike Air branding at the heel, and a red Jumpman on the tongue.",
+      "image": {
+        "original": "https://www.superkicks.in/cdn/shop/files/7_85d091c4-9d68-4495-9d6f-357d98ddf307.jpg?v=1732520840&width=600",
+        "small": "https://image.goat.com/750/attachments/product_template_pictures/images/079/643/723/original/14704_00.png.png",
+        "thumbnail": "https://image.goat.com/375/attachments/product_template_pictures/images/079/643/723/original/14704_00.png.png"
+      },
+      "links": {
+        "stockX": "https://stockx.com/jordan-4-retro-white-cement-1999",
+        "goat": "https://goat.com/sneakers/air-jordan-4-retro-white-cement-136013-101",
+        "flightClub": "https://flightclub.com/air-jordan-4-retro-white-black-136013-101",
+        "stadiumGoods": ""
+      }
+    }
+   
+  ]
+}

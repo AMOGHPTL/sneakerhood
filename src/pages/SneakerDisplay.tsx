@@ -6,10 +6,10 @@ const sneakerDiplay = () => {
   const sneaker = useSelector((store: Rootstate) => store.sneaker);
   return (
     <div className="grid grid-cols-2 gap-10 p-10">
-      <div className="">
-        <img src={sneaker.image.original} alt="" className="m-5 rounded-xl" />
+      <div className="w-full pl-5 pr-10">
+        <img src={sneaker.image.original} alt="" className="m-5 rounded-xl w-full" />
       </div>
-      <div className="m-5"><Purchase/></div>
+      <div className="mr-10 m-5"><Purchase/></div>
     </div>
   );
 };

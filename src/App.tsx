@@ -4,6 +4,7 @@ import Banner from "./componenets/Banner";
 import Navbar from "./componenets/Navbar";
 import SneakerList from "./componenets/SneakerList";
 import SneakerDisplay from "./pages/SneakerDisplay";
+import Footer from "./componenets/Footer";
 
 function App() {
   
@@ -11,13 +12,14 @@ function App() {
     <div className="bg-[#81D8D0] cursor-default">
       <Navbar/>
       
-      <main className=" max-w-screen-xl mx-auto">
+      <main className=" ">
         <Routes>
           <Route path="/sneakers" element={<><Banner/> <SneakerList/></>}/>
           <Route path="/sneaker" element={<SneakerDisplay/> }/>
           <Route path="*" element={<Navigate to={"/sneakers"}/>} />
         </Routes>
       </main>
+      <Footer/>
     </div>
   );
 }
