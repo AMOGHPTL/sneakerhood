@@ -5,7 +5,7 @@ import { Rootstate } from "../state/store";
 
 const Navbar = () => {
  
-  const likecount = useSelector((state:Rootstate) => state.liked.value)
+  const likecount = useSelector((state:Rootstate) => state.liked.list.length)
   const cartcount = useSelector((state:Rootstate) =>state.addtoCart.value)
 
     return ( <div className="w-full text-black bg-[#81D8D0] px-10 py-1 flex justify-between border-b-1 border-b-black">

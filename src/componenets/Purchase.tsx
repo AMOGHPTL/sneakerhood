@@ -3,7 +3,7 @@ import { Rootstate } from "../state/store";
 import { HeartIcon } from "@heroicons/react/24/outline";
 import { PlusIcon } from "@heroicons/react/16/solid";
 import { useState } from "react";
-import { decerement, increament } from "../state/slices/likedSlice";
+import { assingLike, removeLike } from "../state/slices/likedSlice";
 import { addtoCart, removeFromCart } from "../state/slices/cartItemsSlice";
 
 const Purchase = () => {
@@ -20,10 +20,10 @@ const Purchase = () => {
     const handleLiked = () => {
       if (!liked) {
         // Only increment if going from not liked to liked
-        dispatch(increament());
+        dispatch(assingLike(sneaker));
       } else {
         // Only decrement if going from liked to not liked
-        dispatch(decerement());
+        dispatch(removeLike(sneaker));
       }
   
       // Toggle the liked state after dispatching the action

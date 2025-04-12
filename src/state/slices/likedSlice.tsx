@@ -1,26 +1,58 @@
-import { createSlice } from "@reduxjs/toolkit";
+import { createSlice, PayloadAction } from "@reduxjs/toolkit";
 
-
-interface LikedState{
-  value:number;
+interface SneakerState {
+  id: string;
+  sku: string;
+  brand: string;
+  name: string;
+  colorway: string;
+  gender: string;
+  silhouette: string;
+  releaseYear: string;
+  releaseDate: string;
+  retailPrice: number;
+  size: number;
+  estimatedMarketValue: number;
+  story: string;
+  image: {
+    original: string;
+    small: string;
+    thumbnail: string;
+  };
+  links: {
+    stockX: string;
+    goat: string;
+    flightClub: string;
+    stadiumGoods: string;
+  };
+  color?: string;
 }
 
-const initialState: LikedState = {
-    value:0,
+interface LikedListState {
+  list: string[];
 }
 
-const likedSice = createSlice({
-    name:"Liked",
-    initialState,
-    reducers:{
-       increament:(state) => {
-        state.value+=1;
-       },
-       decerement:(state)=>{
-        state.value-=1;
-       }
-    }
-})
+const initialState: LikedListState = {
+  list: [],
+};
 
-export const {increament,decerement} = likedSice.actions;
-export default likedSice.reducer
+const likedSlice = createSlice({
+  name: "Liked",
+  initialState,
+  reducers: {
+    assingLike: (state, action: PayloadAction<SneakerState>) => {
+      state.list.push(action.payload.image.original);
+      // Better logging - create a copy of the current values
+      console.log("Current liked images:", [...state.list]);
+    },
+    removeLike: (state, action: PayloadAction<SneakerState>) => {
+      state.list = state.list.filter(url => url !== action.payload.image.original);
+      // Better logging
+      console.log("Remaining liked images:", [...state.list]);
+      console.log("Count:", state.list.length);
+    },
+  },
+});
+
+export const { assingLike, removeLike } = likedSlice.actions;
+export default likedSlice.reducer;
