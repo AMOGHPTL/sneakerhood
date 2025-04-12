@@ -85,7 +85,7 @@ const SneakerCard = ({ sneaker }: { sneaker: sneaker }) => {
             <p className="text-lg font-semibold">{sneaker.silhouette}</p>
             <p className="text-2xl font-semibold">${sneaker.retailPrice}</p>
           </div>
-          <CartButton />
+          <CartButton sneaker={sneaker} />
         </div>
       </div>
     </div>

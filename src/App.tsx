@@ -6,6 +6,7 @@ import SneakerList from "./componenets/SneakerList";
 import SneakerDisplay from "./pages/SneakerDisplay";
 import Footer from "./componenets/Footer";
 import LikedPage from "./pages/LikedPage";
+import CartPage from "./pages/CartPage";
 
 function App() {
   return (
@@ -24,6 +25,7 @@ function App() {
           />
           <Route path="/sneaker" element={<SneakerDisplay />} />
           <Route path="/liked" element={<LikedPage />} />
+          <Route path="/cart" element={<CartPage/>}/>
           <Route path="*" element={<Navigate to={"/sneakers"} />} />
         </Routes>
       </main>

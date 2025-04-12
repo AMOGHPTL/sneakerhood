@@ -6,7 +6,7 @@ import  sneakerReducer  from "./slices/sneakerSlice";
 export const store = configureStore({
     reducer:{
        liked: likedReducer,
-       addtoCart: cartItemsReducer,
+       cartItems: cartItemsReducer,
        sneaker: sneakerReducer,
     }
 })

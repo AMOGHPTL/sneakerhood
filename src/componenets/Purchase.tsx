@@ -54,7 +54,7 @@ const Purchase = () => {
         </div>
       </div>
       <div className="my-5 mt-16">
-      <CartButton/>
+      <CartButton sneaker={sneaker}/>
       </div>
       <div className="flex flex-col gap-2 mt-10">
         <div className="border-b-1 px-3 py-2 items-center flex w-full justify-between">

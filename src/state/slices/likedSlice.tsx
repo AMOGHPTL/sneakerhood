@@ -43,13 +43,11 @@ const likedSlice = createSlice({
     assingLike: (state, action: PayloadAction<SneakerState>) => {
       state.list.push(action.payload.image.original);
       // Better logging - create a copy of the current values
-      console.log("Current liked images:", [...state.list]);
     },
     removeLike: (state, action: PayloadAction<SneakerState>) => {
       state.list = state.list.filter(url => url !== action.payload.image.original);
       // Better logging
       console.log("Remaining liked images:", [...state.list]);
-      console.log("Count:", state.list.length);
     },
   },
 });
