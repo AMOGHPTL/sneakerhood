@@ -5,21 +5,29 @@ import Navbar from "./componenets/Navbar";
 import SneakerList from "./componenets/SneakerList";
 import SneakerDisplay from "./pages/SneakerDisplay";
 import Footer from "./componenets/Footer";
+import LikedPage from "./pages/LikedPage";
 
 function App() {
-  
   return (
     <div className="bg-[#81D8D0] cursor-default">
-      <Navbar/>
-      
+      <Navbar />
+
       <main className=" ">
         <Routes>
-          <Route path="/sneakers" element={<><Banner/> <SneakerList/></>}/>
-          <Route path="/sneaker" element={<SneakerDisplay/> }/>
-          <Route path="*" element={<Navigate to={"/sneakers"}/>} />
+          <Route
+            path="/sneakers"
+            element={
+              <>
+                <Banner /> <SneakerList />
+              </>
+            }
+          />
+          <Route path="/sneaker" element={<SneakerDisplay />} />
+          <Route path="/liked" element={<LikedPage />} />
+          <Route path="*" element={<Navigate to={"/sneakers"} />} />
         </Routes>
       </main>
-      <Footer/>
+      <Footer />
     </div>
   );
 }

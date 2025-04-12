@@ -4,21 +4,21 @@ import { HeartIcon } from "@heroicons/react/24/outline";
 import { PlusIcon } from "@heroicons/react/16/solid";
 import { useState } from "react";
 import { assingLike, removeLike } from "../state/slices/likedSlice";
-import { addtoCart, removeFromCart } from "../state/slices/cartItemsSlice";
+import CartButton from "./CartButton";
 
 const Purchase = () => {
   //state
   const [showAbout,setShowAbout] = useState(false);
   const [showDetails,setShowDetails] = useState(false);
-  const [liked, setLiked] = useState(false);
-  const [added, setAdded] = useState(false);
 
   
   const dispatch = useDispatch();
 
+  
+
 
     const handleLiked = () => {
-      if (!liked) {
+      if (!isLiked) {
         // Only increment if going from not liked to liked
         dispatch(assingLike(sneaker));
       } else {
@@ -27,27 +27,20 @@ const Purchase = () => {
       }
   
       // Toggle the liked state after dispatching the action
-      setLiked(!liked);
+
     };
   
-    const handleAddToCart = () => {
-      if (!added) {
-        // Only increment if going from not liked to liked
-        dispatch(addtoCart());
-      } else {
-        // Only decrement if going from liked to not liked
-        dispatch(removeFromCart());
-      }
-      // Toggle the liked state after dispatching the action
-      setAdded(!added);
-    };
 
   const sneaker = useSelector((store: Rootstate) => store.sneaker);
+
+  const likelist = useSelector((state:Rootstate) => state.liked.list)
+  const isLiked  = likelist.includes(sneaker.image.original)
+
   return (
     <div className="bg-white p-10 rounded-xl w-full flex flex-col gap-5">
       <div className="text-gray-500 flex justify-between">
         <p>{sneaker.brand}</p>
-        <HeartIcon className={`w-6 ${liked&&"fill-red-500 text-red-500"} hover:fill-red-500 hover:text-red-500 cursor-pointer`} onClick={handleLiked}/>
+        <HeartIcon className={`w-6 ${isLiked&&"fill-red-500 text-red-500"} hover:fill-red-500 hover:text-red-500 cursor-pointer`} onClick={handleLiked}/>
       </div>
       <div>
         <p className="text-3xl font-semibold">{sneaker.silhouette}</p>
@@ -60,8 +53,8 @@ const Purchase = () => {
           <p>{sneaker.size}</p>
         </div>
       </div>
-      <div className="bg-black text-white text-center py-2 text-lg my-5 mt-16 cursor-pointer" onClick={handleAddToCart}>
-        {!added?<p>Add to cart</p>:<p>Remove from cart</p>}
+      <div className="my-5 mt-16">
+      <CartButton/>
       </div>
       <div className="flex flex-col gap-2 mt-10">
         <div className="border-b-1 px-3 py-2 items-center flex w-full justify-between">

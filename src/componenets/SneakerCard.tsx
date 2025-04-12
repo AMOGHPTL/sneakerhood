@@ -1,11 +1,12 @@
 import { HeartIcon } from "@heroicons/react/24/outline";
 import { useDispatch, useSelector } from "react-redux";
-import { useState } from "react";
+
 import { assingLike, removeLike } from "../state/slices/likedSlice";
-import { addtoCart, removeFromCart } from "../state/slices/cartItemsSlice";
+
 import { selectSneaker } from "../state/slices/sneakerSlice";
 import { useNavigate } from "react-router-dom";
 import { Rootstate } from "../state/store";
+import CartButton from "./CartButton";
 
 interface sneaker {
   id: string;
@@ -35,16 +36,14 @@ interface sneaker {
   color?: string;
 }
 
-// const likelist = useSelector((state:Rootstate) => state.liked.list)
-// console.log(likelist)
-
 const SneakerCard = ({ sneaker }: { sneaker: sneaker }) => {
-  const [liked, setLiked] = useState(false);
-  const [added, setAdded] = useState(false);
   const dispatch = useDispatch();
 
+  const likelist = useSelector((state: Rootstate) => state.liked.list);
+  const isLiked = likelist.includes(sneaker.image.original);
+
   const handleLiked = () => {
-    if (!liked) {
+    if (!isLiked) {
       // Only increment if going from not liked to liked
       dispatch(assingLike(sneaker));
     } else {
@@ -53,19 +52,6 @@ const SneakerCard = ({ sneaker }: { sneaker: sneaker }) => {
     }
 
     // Toggle the liked state after dispatching the action
-    setLiked(!liked);
-  };
-
-  const handleAddToCart = () => {
-    if (!added) {
-      // Only increment if going from not liked to liked
-      dispatch(addtoCart());
-    } else {
-      // Only decrement if going from liked to not liked
-      dispatch(removeFromCart());
-    }
-    // Toggle the liked state after dispatching the action
-    setAdded(!added);
   };
 
   const navigate = useNavigate();
@@ -76,13 +62,13 @@ const SneakerCard = ({ sneaker }: { sneaker: sneaker }) => {
   };
 
   return (
-    <div className="bg-gray-100 rounded-xl py-5 px-2 m-10 hover:scale-105 transition ease-out duration-200 cursor-pointer shadow-2xl shadow-gray-600 ">
+    <div className="bg-gray-100 rounded-xl py-5 px-2 m-10 hover:scale-105 transition ease-out duration-200 cursor-pointer shadow-gray-600 ">
       <div className="flex w-full px-2 justify-between items-center">
         <p className="text-xs text-gray-500">{sneaker.name}</p>
         <HeartIcon
           className={`${
-            liked === true && "fill-red-500"
-          } w-6 hover:fill-red-500 cursor-pointer`}
+            isLiked === true && "fill-red-500 text-red-500"
+          } w-6 hover:fill-red-500 cursor-pointer hover:text-red-500`}
           onClick={handleLiked}
         />
       </div>
@@ -99,14 +85,7 @@ const SneakerCard = ({ sneaker }: { sneaker: sneaker }) => {
             <p className="text-lg font-semibold">{sneaker.silhouette}</p>
             <p className="text-2xl font-semibold">${sneaker.retailPrice}</p>
           </div>
-          <div
-            className={`text-xl font-semibold text-white ${
-              !added ? "bg-amber-400" : "bg-red-600"
-            } rounded-sm px-3 p-2`}
-            onClick={handleAddToCart}
-          >
-            <p>{!added ? "Add to cart" : "Remove"}</p>
-          </div>
+          <CartButton />
         </div>
       </div>
     </div>
