@@ -1,59 +1,33 @@
 import { createSlice } from "@reduxjs/toolkit";
 
 interface SneakerState {
+  _id: string;
   id: string;
-  sku: string;
   brand: string;
   name: string;
   colorway: string;
   gender: string;
   silhouette: string;
   releaseYear: string;
-  releaseDate: string;
   retailPrice: number;
-  size:number;
-  estimatedMarketValue: number;
+  size: number;
   story: string;
-  image: {
-    original: string;
-    small: string;
-    thumbnail: string;
-  };
-  links: {
-    stockX: string;
-    goat: string;
-    flightClub: string;
-    stadiumGoods: string;
-  };
-  color?: string;
+  image: string;
 }
 
 const initialState: SneakerState = {
+  _id: "",
   id: "",
-  sku: "",
   brand: "",
   name: "",
   colorway: "",
   gender: "",
   silhouette: "",
   releaseYear: "",
-  releaseDate: "",
   retailPrice: 0,
   size: 0,
-  estimatedMarketValue: 0,
   story: "",
-  image: {
-    original: "",
-    small: "",
-    thumbnail: "",
-  },
-  links: {
-    stockX: "",
-    goat: "",
-    flightClub: "",
-    stadiumGoods: "",
-  },
-  color: "",
+  image: "",
 };
 
 export const sneakerSlice = createSlice({

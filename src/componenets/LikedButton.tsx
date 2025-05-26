@@ -1,3 +1,4 @@
+import { HeartIcon } from "@heroicons/react/24/outline";
 import axios from "axios";
 import { useEffect, useState } from "react";
 
@@ -16,30 +17,24 @@ interface SneakerState {
   image: string;
 }
 
-const CartButton = ({
-  user,
-  sneaker,
-}: {
-  user: string;
-  sneaker: SneakerState | null;
-}) => {
-  const [inCart, setInCart] = useState(Boolean);
+const LikedButton = ({ user, sneaker }: { user: string; sneaker: SneakerState | null}) => {
+  const [inLiked, setInLiked] = useState(Boolean);
   const [loading, setLoading] = useState(true);
 
-  const handleAddToCart = async () => {
+  const handleAddToLiked = async () => {
     setTimeout(() => {}, 3000);
-    if (inCart === false) {
-      await axios.post("http://localhost:5000/addToCart", {
+    if (inLiked === false) {
+      await axios.post("http://localhost:5000/addToLiked", {
         id: sneaker?._id,
         user: user,
       });
-      setInCart(true);
+      setInLiked(true);
     } else {
-      await axios.post("http://localhost:5000/removeFromCart", {
+      await axios.post("http://localhost:5000/removeFromLiked", {
         id: sneaker?._id,
         user: user,
       });
-      setInCart(false);
+      setInLiked(false);
     }
     // Toggle the liked state after dispatching the action
   };
@@ -47,12 +42,12 @@ const CartButton = ({
   useEffect(() => {
     setLoading(true);
     const checking = async () => {
-      const check = await axios.post("http://localhost:5000/checkInCart", {
+      const check = await axios.post("http://localhost:5000/checkInLiked", {
         id: sneaker?._id,
         user: user,
       });
       const addedToCart = check.data;
-      setInCart(addedToCart);
+      setInLiked(addedToCart);
       setLoading(false);
     };
     checking();
@@ -61,17 +56,17 @@ const CartButton = ({
   return (
     <div>
       {!loading && (
-        <div
-          className={`text-xl font-semibold text-white text-center cursor-pointer ${
-            !inCart ? "bg-amber-400" : "bg-red-600"
-          } rounded-sm px-3 p-2`}
-          onClick={handleAddToCart}
+        <HeartIcon
+          className={`w-6 text-black cursor-pointer ${
+            !inLiked ? "fill-white" : "fill-red-600"
+          }`}
+          onClick={handleAddToLiked}
         >
-          <p>{!inCart ? "Add to cart" : "Remove"}</p>
-        </div>
+          <p>{!inLiked ? "Add to cart" : "Remove"}</p>
+        </HeartIcon>
       )}
     </div>
   );
 };
 
-export default CartButton;
+export default LikedButton;

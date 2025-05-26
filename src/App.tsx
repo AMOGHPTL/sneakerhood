@@ -7,14 +7,18 @@ import SneakerDisplay from "./pages/SneakerDisplay";
 import Footer from "./componenets/Footer";
 import LikedPage from "./pages/LikedPage";
 import CartPage from "./pages/CartPage";
+import Signup from "./componenets/Signup";
+import Login from "./componenets/Login";
 
 function App() {
   return (
     <div className="bg-[#81D8D0] cursor-default">
       <Navbar />
 
-      <main className=" ">
+      <main className="flex flex-col justify-center">
         <Routes>
+          <Route path="*" element={<Navigate to={"/login"} />} />
+          <Route path="/" element={<Navigate to={"/login"} />} />
           <Route
             path="/sneakers"
             element={
@@ -25,8 +29,11 @@ function App() {
           />
           <Route path="/sneaker" element={<SneakerDisplay />} />
           <Route path="/liked" element={<LikedPage />} />
-          <Route path="/cart" element={<CartPage/>}/>
-          <Route path="*" element={<Navigate to={"/sneakers"} />} />
+          <Route path="/cart" element={<CartPage />} />
+
+          <Route path="/sneakers/:id" element={<SneakerDisplay />} />
+          <Route path="/signup" element={<Signup />} />
+          <Route path="/login" element={<Login />} />
         </Routes>
       </main>
       <Footer />

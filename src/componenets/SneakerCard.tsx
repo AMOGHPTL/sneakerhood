@@ -1,79 +1,50 @@
-import { HeartIcon } from "@heroicons/react/24/outline";
-import { useDispatch, useSelector } from "react-redux";
-
-import { assingLike, removeLike } from "../state/slices/likedSlice";
-
-import { selectSneaker } from "../state/slices/sneakerSlice";
 import { useNavigate } from "react-router-dom";
-import { Rootstate } from "../state/store";
 import CartButton from "./CartButton";
+import LikedButton from "./LikedButton";
 
-interface sneaker {
+interface SneakerState {
+  _id: string;
   id: string;
-  sku: string;
   brand: string;
   name: string;
   colorway: string;
   gender: string;
   silhouette: string;
   releaseYear: string;
-  releaseDate: string;
   retailPrice: number;
   size: number;
-  estimatedMarketValue: number;
   story: string;
-  image: {
-    original: string;
-    small: string;
-    thumbnail: string;
-  };
-  links: {
-    stockX: string;
-    goat: string;
-    flightClub: string;
-    stadiumGoods: string;
-  };
-  color?: string;
+  image: string;
 }
 
-const SneakerCard = ({ sneaker }: { sneaker: sneaker }) => {
-  const dispatch = useDispatch();
-
-  const likelist = useSelector((state: Rootstate) => state.liked.list);
-  const isLiked = likelist.includes(sneaker.image.original);
-
-  const handleLiked = () => {
-    if (!isLiked) {
-      // Only increment if going from not liked to liked
-      dispatch(assingLike(sneaker));
-    } else {
-      // Only decrement if going from liked to not liked
-      dispatch(removeLike(sneaker));
-    }
-
-    // Toggle the liked state after dispatching the action
-  };
+const SneakerCard = ({
+  sneaker,
+  currentUser,
+}: {
+  sneaker: SneakerState;
+  currentUser: string;
+}) => {
+  const id = sneaker._id;
 
   const navigate = useNavigate();
 
   const handleSelected = () => {
-    dispatch(selectSneaker(sneaker));
-    navigate("/sneaker");
+    navigate(`/sneakers/${id}`);
   };
 
   return (
     <div className="bg-gray-100 rounded-xl py-5 px-2 m-10 hover:scale-105 transition ease-out duration-200 cursor-pointer shadow-gray-600 ">
       <div className="flex w-full px-2 justify-between items-center">
         <p className="text-xs text-gray-500">{sneaker.name}</p>
-        <HeartIcon
-          className={`${
-            isLiked === true && "fill-red-500 text-red-500"
-          } w-6 hover:fill-red-500 cursor-pointer hover:text-red-500`}
-          onClick={handleLiked}
-        />
+        <LikedButton sneaker={sneaker} user={currentUser} />
       </div>
-      <div onClick={handleSelected} className="w-full flex justify-center">
-        <img className="w-60" src={sneaker.image.original} alt="" />
+      <div className="w-full flex justify-center">
+        <img
+          className="w-60"
+          src={sneaker.image}
+          alt=""
+          onClick={handleSelected}
+        />
       </div>
       <div className="mx-5">
         <div className="flex w-full justify-between items-center">
@@ -85,7 +56,7 @@ const SneakerCard = ({ sneaker }: { sneaker: sneaker }) => {
             <p className="text-lg font-semibold">{sneaker.silhouette}</p>
             <p className="text-2xl font-semibold">${sneaker.retailPrice}</p>
           </div>
-          <CartButton sneaker={sneaker} />
+          <CartButton sneaker={sneaker} user={currentUser} />
         </div>
       </div>
     </div>
