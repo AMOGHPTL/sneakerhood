@@ -18,9 +18,14 @@ interface SneakerState {
   image: string;
 }
 
-const sneakerDiplay = () => {
-  const [sneaker, setSneaker] = useState<SneakerState | null>(null);
+const sneakerDiplay = ({likedList,cartList}:{likedList:Array<string>; cartList:Array<string>}) => {
+  // const id = sneaker._id;
+
+  const [liked, setLiked] = useState(false);
+  const [inCart, setInCart] = useState(false);
   const [loading, setLoading] = useState(true);
+
+    const [sneaker, setSneaker] = useState<SneakerState | null>(null);
   const [currentUser, setCurrentUser] = useState("");
 
   const { id } = useParams();
@@ -30,15 +35,64 @@ const sneakerDiplay = () => {
     const fetchSneaker = async () => {
       const sneaker = await axios.get(`http://localhost:5000/sneaker/${id}`);
       setSneaker(sneaker.data);
-      setLoading(false);
+       setLiked(likedList?.includes(sneaker.data._id));
+      console.log(likedList, cartList);
+      setInCart(cartList?.includes(sneaker.data._id));
+      
     };
     const fetchCU = async () => {
       const currentUser = await axios.get("http://localhost:5000/currentUser");
       setCurrentUser(currentUser.data.email);
+      setLoading(false);
     };
     fetchCU();
     fetchSneaker();
   }, []);
+
+  useEffect(() => {
+    
+  }, []);
+
+  useEffect(() => {
+    setLoading(true);
+    const handleAddToLiked = async () => {
+      if (liked === false) {
+        await axios.post("http://localhost:5000/removeFromLiked", {
+          id: sneaker?._id,
+          user: currentUser,
+        });
+      } else {
+        await axios.post("http://localhost:5000/addToLiked", {
+          id: sneaker?._id,
+          user: currentUser,
+        });
+      }
+      setLoading(false);
+    };
+    handleAddToLiked();
+  }, [liked]);
+
+ 
+
+  useEffect(() => {
+    setLoading(true);
+    const handleAddToCart = async () => {
+      if (inCart === false) {
+        await axios.post("http://localhost:5000/removeFromCart", {
+          id: sneaker?._id,
+          user: currentUser,
+        });
+      } else {
+        await axios.post("http://localhost:5000/addToCart", {
+          id: sneaker?._id,
+          user: currentUser,
+        });
+      }
+      setLoading(false);
+    };
+    handleAddToCart();
+  }, [inCart]);
+
 
   return (
     <div>
@@ -48,7 +102,7 @@ const sneakerDiplay = () => {
             <img src={sneaker?.image} alt="" className="m-5 rounded-xl w-full" />
           </div>
           <div className="mr-10 m-5">
-            <Purchase sneaker={sneaker} currentUser={currentUser} />
+            <Purchase liked={liked} setLiked={setLiked} inCart={inCart} setInCart={setInCart} sneaker={sneaker} currentUser={currentUser} />
           </div>
         </div>
       )}

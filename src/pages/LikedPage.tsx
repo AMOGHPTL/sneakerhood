@@ -2,6 +2,7 @@ import { useEffect, useState } from "react";
 import CartButton from "../componenets/CartButton";
 import { HeartIcon } from "@heroicons/react/24/outline";
 import axios from "axios";
+import SneakerCard from "../componenets/SneakerCard";
 
 interface SneakerState {
   _id: string;
@@ -18,51 +19,51 @@ interface SneakerState {
   image: string;
 }
 
-const LikedPage = () => {
+const LikedPage = ({
+  sneaker,
+  currentUser,
+  likedList,
+  cartList,
+}: {
+  sneaker: SneakerState;
+  currentUser: string;
+  likedList: Array<string>;
+  cartList: Array<string>;
+}) => {
   const [user, setUser] = useState("");
-  const [likedList, setLikedList] = useState([String]);
-  const [sneakers,setSneakers] =  useState<[SneakerState] | null>(
-    null
-  );
-
-  // const likedSneakers = sneakers?.filter(sneaker => likedList.map(liked => liked.toString()===sneaker._id.toString()));
+  const [sneakers, setSneakers] = useState<[SneakerState] | null>(null);
+  const [loading, setLoading] = useState(true);
 
   useEffect(() => {
+    setLoading(true);
     const fetchData = async () => {
       const user = await axios.get("http://localhost:5000/currentUser");
       setUser(user.data.email);
-      const userData = await axios.get("http://localhost:5000/currentUserData");
-      setLikedList(userData.data.liked);
       const sneakers = await axios.get("http://localhost:5000/sneakers");
-      setSneakers(sneakers.data)
+      setSneakers(sneakers.data);
+      setLoading(false);
     };
     fetchData();
   }, []);
 
   return (
-    <div className="p-5 flex flex-col gap-5">
-      {sneakers?.filter(sneaker => likedList.map(liked => liked.toString()===sneaker._id.toString())).map((sneaker) =>  (
-        <div className="flex w-full justify-between p-5 bg-white rounded-xl">
-          <div className="flex gap-5">
-            <img src={sneaker.image} alt="" className="h-32" />
-            <div className="flex flex-col justify-around">
-              <p className="text-lg text-gray-500">{sneaker.brand}</p>
-              <p className="text-3xl font-semibold">{sneaker.name}</p>
-              <p className="texxt-sm text-gray-500">{sneaker.colorway}</p>
-            </div>
-          </div>
-          <div className="flex flex-col justify-between items-end">
-            <p className="text-3xl font-semibold">${sneaker.retailPrice}</p>
-            <div className="flex gap-5">
-              <HeartIcon
-                className={`w-6 text-red-500 cursor-pointer fill-red-500 `}
+    <>
+      {!loading && (
+        <div className="p-5 flex flex-col gap-5">
+          <p className="text-5xl font-semibold p-10">Liked Page</p>
+          {sneakers
+            ?.filter((sneaker) => likedList.includes(sneaker._id))
+            .map((sneaker) => (
+              <SneakerCard
+                cartList={cartList}
+                likedList={likedList}
+                currentUser={currentUser}
+                sneaker={sneaker}
               />
-              <CartButton sneaker={sneaker} user={user} />
-            </div>
-          </div>
+            ))}
         </div>
-      ))}
-    </div>
+      )}
+    </>
   );
 };
 

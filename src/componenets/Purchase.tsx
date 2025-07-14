@@ -21,9 +21,17 @@ interface SneakerState {
 const Purchase = ({
   sneaker,
   currentUser,
+  liked,
+  inCart,
+  setLiked,
+  setInCart,
 }: {
   sneaker: SneakerState | null;
   currentUser: string;
+  liked: boolean;
+  inCart: boolean;
+  setLiked: React.Dispatch<React.SetStateAction<boolean>>;
+  setInCart: React.Dispatch<React.SetStateAction<boolean>>;
 }) => {
   //state
   const [showAbout, setShowAbout] = useState(false);
@@ -33,7 +41,7 @@ const Purchase = ({
     <div className="bg-white p-10 rounded-xl w-full flex flex-col gap-5">
       <div className="text-gray-500 flex justify-between">
         <p>{sneaker?.brand}</p>
-        <LikedButton sneaker={sneaker} user={currentUser} />
+        {/* <LikedButton liked={liked} setLiked={setLiked} /> */}
       </div>
       <div>
         <p className="text-3xl font-semibold">{sneaker?.silhouette}</p>
@@ -47,7 +55,7 @@ const Purchase = ({
         </div>
       </div>
       <div className="my-5 mt-16">
-        <CartButton sneaker={sneaker} user={currentUser} />
+        {/* <CartButton inCart={inCart} setInCart={setInCart} /> */}
       </div>
       <div className="flex flex-col gap-2 mt-10">
         <div className="border-b-1 px-3 py-2 items-center flex w-full justify-between">

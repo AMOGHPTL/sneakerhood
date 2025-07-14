@@ -73,7 +73,7 @@ app.post("/checkInCart" , async(req,res) => {
 })
 
 app.post("/getLiked" , async(req,res) => {
-    const userEmail = req.body;
+    const {userEmail} = req.body;
     const liked = await User.findOne({email:userEmail})
     res.send(liked);
 })
@@ -131,6 +131,7 @@ app.post("/currentUserData" , async(req,res) => {
     const userData = await User.findOne({email:userEmail});
     res.send(userData);
 })
+
 
 
 

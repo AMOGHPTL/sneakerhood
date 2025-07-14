@@ -9,10 +9,35 @@ import { Rootstate } from "../state/store";
 import { useNavigate } from "react-router-dom";
 import axios from "axios";
 import { useEffect, useState } from "react";
+import LikedDisplay from "./LikedDisplay";
 
-const Navbar = () => {
+interface SneakerState {
+  _id: string;
+  id: string;
+  brand: string;
+  name: string;
+  colorway: string;
+  gender: string;
+  silhouette: string;
+  releaseYear: string;
+  retailPrice: number;
+  size: number;
+  story: string;
+  image: string;
+}
+
+const Navbar = ({
+  likedList,
+  cartList,
+  sneakes
+}: {
+  likedList: Array<string>;
+  cartList: Array<string>;
+  sneakes: Array<SneakerState>;
+}) => {
   const [currentUser, setCurrentUser] = useState("");
   const [loading, setLoading] = useState(true);
+  // const [liked,setLiked] = useState([])
 
   const navigate = useNavigate();
 
@@ -21,6 +46,8 @@ const Navbar = () => {
     const fetchCurrentUser = async () => {
       const currentuser = await axios.get("http://localhost:5000/currentUser");
       setCurrentUser(currentuser.data.email);
+      // const liked  = await axios.post("http://localhost:5000/getLiked" , currentuser);
+      // setLiked(liked.data)
       setLoading(false);
     };
     fetchCurrentUser();
@@ -32,13 +59,13 @@ const Navbar = () => {
   );
 
   const handlelike = () => {
-    if (likecount != 0) {
+    if (likedList.length != 0) {
       navigate("/liked");
     }
   };
 
   const handleCart = () => {
-    if (cartcount != 0) {
+    if (cartList.length != 0) {
       navigate("/cart");
     }
   };
@@ -71,7 +98,9 @@ const Navbar = () => {
         <img src={logo} alt="" className="w-18" />
       </div>
       <div className="flex justify-center items-center gap-16 mr-10 ">
-        {!loading && currentUser && <p className="relative top-1">Hello, {currentUser}</p>}
+        {!loading && currentUser && (
+          <p className="relative top-1">Hello, {currentUser}</p>
+        )}
         <div className="cursor-pointer relative" onClick={handleLogout}>
           <UserIcon className="w-8" />
           <p className="absolute top-2 right-[-50px]">Logout</p>
@@ -79,18 +108,21 @@ const Navbar = () => {
         <div className="cursor-pointer relative">
           <HeartIcon className="w-8" onClick={handlelike} />
           <p className="absolute top-[-4px] right-[-6px] bg-black text-white font-semibold border-[2px] border-black rounded-full text-xs px-1">
-            {likecount}
+            {likedList.length}
           </p>
           <p className="absolute top-2 right-[-40px]">Liked</p>
         </div>
         <div className="cursor-pointer relative">
           <ShoppingCartIcon className="w-8" onClick={handleCart} />
           <p className="absolute top-[-4px] right-[-8px] bg-black text-white font-semibold border-[2px] border-black rounded-full text-xs px-1">
-            {cartcount}
+            {cartList.length}
           </p>
           <p className="absolute top-2 right-[-35px]">Cart</p>
         </div>
       </div>
+      {/* <div>
+        <LikedDisplay likedList={likedList} sneakes={sneakes}/>
+      </div> */}
     </div>
   );
 };
